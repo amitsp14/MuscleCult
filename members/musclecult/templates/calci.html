@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Musclecult</title>
+</head>
+<body>
+    
+</body>
+<link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body {
+        font-family: 'Baloo Bhai', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        /* background: url(g2.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%; */
+        background-color: black;
+
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: 20px;
+    }
+
+    .left img {
+        width: 100px;
+    }
+
+    .left div {
+        line-height: 19px;
+        font-size: 26px;
+        text-align: center;
+    }
+
+    .mid {
+        display: block;
+        width: 50%;
+        margin-left: 250px;
+        margin-top: 60px;
+        /* border: 2px solid green; */
+    }
+
+    .right {
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        display: inline-block;
+        /* border: 2px solid yellow; */
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 25px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: grey;
+
+    }
+
+    .btn {
+        font-family: 'Baloo Bhai', cursive;
+        margin: 0px 9px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+
+    .btn:hover {
+        background-color: rgb(31, 30, 30);
+    }
+
+    .container {
+        border: 2px solid white;
+        margin: 50px auto;
+        padding: 10px;
+        width: 78%;
+        border-radius: 28px;
+    }
+
+    .container2 {
+        background-color: rgb(202, 202, 202);
+        border: 2px solid white;
+        margin: 50px auto;
+        padding: 10px;
+        width: 78%;
+        border-radius: 28px;
+    }
+
+    .container3 {
+        background-color: rgb(202, 202, 202);
+        border: 2px solid white;
+        margin: 50px auto;
+        padding: 10px;
+        width: 78%;
+        border-radius: 28px;
+    }
+
+    .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 508px;
+        padding: 1px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 25px;
+        border-radius: 8px;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            {% load static %}
+            <img src="{% static 'logoimg.png' %}" alt="logo">
+            <div>Musclecult</div>
+        </div>
+        <!-- Mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About Us</a></li>
+                <li><a href="/calci" class="active">Fitness Calculator</a></li>
+                <li><a href="/contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+
+    </header>
+    <div class="container">
+        <a href="https://totalshape.com/" title="BMI Calculator by TotalShape" class="ts-bmi"></a>
+        <script src="https://totalshape.com/embed/bmi.js"></script>
+
+    </div>
+    <div class="container2">
+        <a href="https://totalshape.com/" title="TDEE Calculator by TotalShape" class="ts-tdee"></a>
+        <script src="https://totalshape.com/embed/tdee.js"></script>
+    </div>
+    <div class="container3">
+        <a href="https://totalshape.com/" title="Macro Calculator by TotalShape" class="ts-macro"></a>
+        <script src="https://totalshape.com/embed/macro.js"></script>
+
+    </div>
+
+    <div class="d-flex flex-column justify-content-center w-100 h-100">
+
+        <div class="d-flex flex-column justify-content-center align-items-center"></div>
+    </div>
+
+
+
+</body>
+<style>
+    body {
+        background: linear-gradient(-45deg, #540000, #000000, #7b0000, #000806);
+        background-size: 400% 400%;
+        animation: gradient 10s ease infinite;
+        height: 100vh;
+    }
+
+
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+
+        50% {
+            background-position: 100% 50%;
+        }
+
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+</style>
+
+</html>
